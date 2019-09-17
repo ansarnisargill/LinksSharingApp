@@ -1,0 +1,27 @@
+﻿@page "{Urlid}"
+@model VerifyModel
+@{
+ViewData["Title"] = "Verify Access Code";
+}
+<div class="list-group mt-4">
+    @{ var item= Model.Link;
+
+    <div class="card col-4 offset-4 bg-white">
+        <div class="card-body">
+            <h5 class="card-title">@item.Url</h5>
+            <p class="card-text">@item.Description</p>
+            <div class="form-group">
+                <label for="code" class="control-label">Enetr Code</label>
+                <input type="text" id="code" name="code" class="form-control" />
+            </div>
+            <a href="#" class="btn btn-outline-success">Go</a>
+            <a href="#" class="btn btn-outline-primary">Purchase Code</a>
+
+        </div>
+        
+        
+    </div>
+
+
+    }
+</div>

@@ -10,7 +10,7 @@
         <div class="list-group mt-4">
             @{ foreach (var item in Model.ListOfLinks)
                 {
-                    <a href="@item.Url" class="list-group-item list-group-item-action bg-primary text-light flex-column align-items-start">
+                    <a href="Verify/@item.ID" class="list-group-item list-group-item-action bg-primary text-light flex-column align-items-start">
                         <div class="d-flex w-100 ">
                             <h5 class="mb-1">@item.Url</h5>
                         </div>

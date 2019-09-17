@@ -1,0 +1,10 @@
+Hello,
+
+sorry for my English I´m french nativ speaker. I need your support. 
+I have to share web links to my clients ,
+but I m looking for a solution to integrate a code that the client will have to give before accessing to the links. 
+So he will be redirected to process first to payment  after that will receive a code to access to the link. 
+To protect my business all my link will be accessible just for 24hours.
+after 24hours the client need to buy a new code.
+And separate code for separate link so you can use code generator.
+10 users will have separate 10 codes.

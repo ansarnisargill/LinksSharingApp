@@ -22,7 +22,8 @@ namespace LinkShareApp.Pages
             {
                 code= RandomString(10);
             }
-            var hours = Convert.ToDecimal((TillDate - DateTime.Now).Minutes)/60M;
+            
+            var hours = Convert.ToDecimal((TillDate - DateTime.Now).TotalMinutes)/60M;
             var NewCode = new Code()
             {
                 Amount = Link.PricePerHour * hours,

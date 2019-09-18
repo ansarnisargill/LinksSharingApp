@@ -29,7 +29,8 @@ namespace LinkShareApp.Pages
             
             if (IsAutehntic)
             {
-              return  Redirect(Code.Link.Url);
+             // return  Redirect(Code.Link.Url);
+             this.Message=$"Secret Link is: <br><span class='text-success'>{Code.Link.Url} </span>";
             }
             else
             {

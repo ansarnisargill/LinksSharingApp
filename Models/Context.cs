@@ -11,6 +11,8 @@ namespace LinkShareApp.Models
 
         }
         public DbSet<Link> Links { get; set; }
+        public DbSet<Code> Codes { get; set; }
+
     }
 
 }

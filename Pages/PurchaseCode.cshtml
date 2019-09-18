@@ -1,0 +1,28 @@
+﻿@page "{Linkid}"
+@model LinkShareApp.Pages.PurchaseCodeModel
+@{
+    ViewData["Title"] = "PurchaseCode";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+@{ var item = Model.Link;
+
+    <div class="card col-4 offset-4 bg-white">
+        <div class="card-body">
+            <h5 class="card-title">@item.UrlName</h5>
+            <p class="card-text">@item.Description <br /> Per Hour Price:@item.PricePerHour.ToString("C")</p>
+            <div class="form-group">
+                <label for="code" class="control-label">Valid Till</label>
+                <input type="datetime-local" id="date" name="date" class="form-control" />
+                <input type="hidden" id="id" name="id" value="@item.ID" />
+            </div>
+            <a href="#" class="btn btn-outline-success" onclick="GetDate()">Checkout</a>
+
+        </div>
+
+
+    </div>
+
+
+}
+

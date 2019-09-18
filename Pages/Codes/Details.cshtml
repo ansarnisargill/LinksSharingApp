@@ -1,0 +1,44 @@
+﻿@page
+@model LinkShareApp.Pages.Codes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Code</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Code.Link)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Code.Link.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Code.CodeTerm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Code.CodeTerm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Code.ValidTill)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Code.ValidTill)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Code.Amount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Code.Amount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Code.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

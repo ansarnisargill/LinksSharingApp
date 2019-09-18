@@ -1,0 +1,17 @@
+﻿@page "{id}/{date}"
+@model LinkShareApp.Pages.CheckoutModel
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+    <div class="card col-4 offset-4 bg-white">
+        <div class="card-body">
+            <h5 class="card-title">Use this code to unlock link!</h5>
+            <h1 class="card-text text-success">@Model.Code.CodeTerm</h1>
+
+
+        </div>
+
+
+    </div>
+

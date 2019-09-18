@@ -6,21 +6,33 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>Create New Link</h1>
+<h1>Create</h1>
+
+<h4>Link</h4>
 <hr />
 <div class="row">
-    <div class="card col-md-4">
+    <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Link.UrlName" class="control-label"></label>
+                <input asp-for="Link.UrlName" class="form-control" />
+                <span asp-validation-for="Link.UrlName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Link.Description" class="control-label"></label>
+                <input asp-for="Link.Description" class="form-control" />
+                <span asp-validation-for="Link.Description" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="Link.Url" class="control-label"></label>
                 <input asp-for="Link.Url" class="form-control" />
                 <span asp-validation-for="Link.Url" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Link.Description" class="control-label"></label>
-                <input asp-for="Link.Description" class="form-control" />
-                <span asp-validation-for="Link.Description" class="text-danger"></span>
+                <label asp-for="Link.PricePerHour" class="control-label"></label>
+                <input asp-for="Link.PricePerHour" class="form-control" />
+                <span asp-validation-for="Link.PricePerHour" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

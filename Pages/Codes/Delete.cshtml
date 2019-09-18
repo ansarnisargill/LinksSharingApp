@@ -1,5 +1,5 @@
 ﻿@page
-@model LinkShareApp.Pages.Links.DeleteModel
+@model LinkShareApp.Pages.Codes.DeleteModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -10,37 +10,37 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Link</h4>
+    <h4>Code</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Link.UrlName)
+            @Html.DisplayNameFor(model => model.Code.Link)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Link.UrlName)
+            @Html.DisplayFor(model => model.Code.Link.Description)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Link.Description)
+            @Html.DisplayNameFor(model => model.Code.CodeTerm)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Link.Description)
+            @Html.DisplayFor(model => model.Code.CodeTerm)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Link.Url)
+            @Html.DisplayNameFor(model => model.Code.ValidTill)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Link.Url)
+            @Html.DisplayFor(model => model.Code.ValidTill)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Link.PricePerHour)
+            @Html.DisplayNameFor(model => model.Code.Amount)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Link.PricePerHour)
+            @Html.DisplayFor(model => model.Code.Amount)
         </dd>
     </dl>
     
     <form method="post">
-        <input type="hidden" asp-for="Link.ID" />
+        <input type="hidden" asp-for="Code.ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-page="./Index">Back to List</a>
     </form>

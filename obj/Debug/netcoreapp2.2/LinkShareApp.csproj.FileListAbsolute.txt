@@ -83,6 +83,13 @@ C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.Assembl
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.TagHelpers.input.cache
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.TagHelpers.output.cache
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.RazorCoreGenerate.cache
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Admin.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Checkout.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Codes\Delete.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Codes\Details.cshtml.g.cs
@@ -99,6 +106,7 @@ C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\PurchaseCode.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\Verify.cshtml.g.cs
 C:\Users\it\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\VerifyCode.cshtml.g.cs

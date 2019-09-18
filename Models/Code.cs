@@ -14,8 +14,10 @@ namespace LinkShareApp.Models
         public int LinkId { get; set; }
         public Link Link { get; set; }
         [Required]
+        [Display(Name = "Code")]
         public string CodeTerm { get; set; }
         [Required]
+        [Display(Name = "Valid Till")]
         public DateTime ValidTill { get; set; }
         public decimal Amount { get; set; }
 

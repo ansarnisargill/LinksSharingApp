@@ -13,8 +13,11 @@ namespace LinkShareApp.Pages
         private readonly LinkAppContext _context;
         [BindProperty]
         public Link Link { get; set; } = new Link();
-        public void OnGet(int Urlid)
+        [BindProperty]
+        public string code { get; set; } = "";
+        public void OnGet(int Urlid,string Code)
         {
+            code = Code;
             Link = _context.Links.Where(x=>x.ID==Urlid).First();
         }
         public VerifyModel(LinkAppContext context)

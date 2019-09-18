@@ -4,15 +4,11 @@
     ViewData["Title"] = "Home page";
 }
 
-    <div class="text-center">
-        <a asp-page="/Links/Index" class="btn btn-block btn-outline-success ">Manage URLS</a>
-        <a asp-page="/Codes/Index" class="btn btn-block btn-outline-dark mt-3 ">Manage Codes</a>
-
-    </div>
+<h1>List Of Available URLs</h1>
         <div class="list-group mt-4">
             @{ foreach (var item in Model.ListOfLinks)
                 {
-                    <a href="/Verify/@item.ID" class="list-group-item list-group-item-action bg-primary text-light flex-column align-items-start">
+                    <a href="/Verify/@item.ID" class="list-group-item list-group-item-action bg-dark text-light flex-column align-items-start">
                         <div class="d-flex w-100 ">
                             <h5 class="mb-1">@item.UrlName</h5>
                         </div>

@@ -6,8 +6,8 @@
   <PropertyGroup>
     <ActiveDebugProfile>LinkShareApp</ActiveDebugProfile>
     <ShowAllFiles>true</ShowAllFiles>
-    <_SelectedScaffolderID>Microsoft.WebTools.Scaffolding.Core.ModelBasedCrudRazorPageScaffolder</_SelectedScaffolderID>
-    <_SelectedScaffolderCategoryPath>root/Common</_SelectedScaffolderCategoryPath>
+    <_SelectedScaffolderID>IdentityScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Identity</_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_LayoutPageFile>~/Pages/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
     <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
@@ -16,5 +16,7 @@
     <WebStackScaffolding_DbContextTypeFullName>LinkShareApp.Models.LinkAppContext</WebStackScaffolding_DbContextTypeFullName>
     <RazorPage_SelectedScaffolderID>Microsoft.WebTools.Scaffolding.Core.RazorPageScaffolder</RazorPage_SelectedScaffolderID>
     <RazorPage_SelectedScaffolderCategoryPath>root/RazorPage</RazorPage_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
+    <WebStackScaffolding_UserClassDialogWidth>600</WebStackScaffolding_UserClassDialogWidth>
   </PropertyGroup>
 </Project>

@@ -9,6 +9,7 @@ using LinkShareApp.Models;
 
 namespace LinkShareApp.Pages.Codes
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
     public class IndexModel : PageModel
     {
         private readonly LinkShareApp.Models.LinkAppContext _context;

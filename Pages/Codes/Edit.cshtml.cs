@@ -10,6 +10,8 @@ using LinkShareApp.Models;
 
 namespace LinkShareApp.Pages.Codes
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
+
     public class EditModel : PageModel
     {
         private readonly LinkShareApp.Models.LinkAppContext _context;

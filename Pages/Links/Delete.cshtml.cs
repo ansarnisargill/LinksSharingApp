@@ -9,6 +9,7 @@ using LinkShareApp.Models;
 
 namespace LinkShareApp.Pages.Links
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
     public class DeleteModel : PageModel
     {
         private readonly LinkShareApp.Models.LinkAppContext _context;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +9,6 @@ using LinkShareApp.Models;
 
 namespace LinkShareApp.Pages.Links
 {
-    [Microsoft.AspNetCore.Authorization.Authorize]
     public class DeleteModel : PageModel
     {
         private readonly LinkShareApp.Models.LinkAppContext _context;

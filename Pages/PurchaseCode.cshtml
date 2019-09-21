@@ -4,18 +4,18 @@
 ViewData["Title"] = "PurchaseCode";
 Layout = "~/Pages/Shared/_Layout.cshtml";
 }
-
+   <script src="https://www.paypal.com/sdk/js?client-id=SB_CLIENT_ID&currency=USD">
+    </script>
+    <div id="paypal-button-container"></div>
+      <script>
+    paypal.Buttons().render('#paypal-button-container');
+  </script>
 @{ var item = Model.Link;
 
 <div class="card col-4 offset-4 bg-white">
     <div class="card-body">
         <h5 class="card-title">@item.UrlName</h5>
-        <p class="card-text">@item.Description <br /> Per Hour Price:@item.PricePerHour.ToString("C")</p>
-        <div class="form-group">
-            <label for="code" class="control-label">Valid Till</label>
-            <input type="datetime-local" id="date" name="date" class="form-control" />
-            <input type="hidden" id="id" name="id" value="@item.ID" />
-        </div>
+        <p class="card-text">@item.Description <br /> Price for next 24 hour access is: @item.PricePerDay.ToString("C")</p>
         <!-- Example split danger button -->
         <div class="btn-group">
             <button type="button" class="btn btn-outline-success">Checkout</button>
@@ -25,7 +25,7 @@ Layout = "~/Pages/Shared/_Layout.cshtml";
             </button>
             <div class="dropdown-menu">
                 <a class="dropdown-item disabled btn btn-outline-dark" href="#">Via PayPal</a>
-                <a class="dropdown-item btn btn-outline-dark" href="#" onclick="GetDate()">Via Cash</a>
+                <a class="dropdown-item btn btn-outline-dark" href="/Checkout/@item.ID">Via Cash</a>
             </div>
         </div>
 

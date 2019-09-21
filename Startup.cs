@@ -32,9 +32,8 @@ namespace LinkShareApp
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            // services.AddDbContext<FoodContext>(options =>
-            //        options.UseSqlite(Configuration.GetConnectionString("PunjabDatabase")));
-            services.AddDbContext<LinkAppContext>(options => options.UseInMemoryDatabase("Data"));
+            services.AddDbContext<LinkAppContext>(options =>
+                   options.UseSqlServer(Configuration.GetConnectionString("MainDB")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

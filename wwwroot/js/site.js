@@ -9,13 +9,3 @@
     }
 }
 
-const GetDate = function () {
-    let DateNode = document.querySelector("#date");
-    let IDNode = document.querySelector("#id");
-    if (DateNode.value) {
-        window.location.href = `/Checkout/${IDNode.value}/${DateNode.value}`;
-    }
-    else {
-        alert("Please Enter Date and Time");
-    }
-}

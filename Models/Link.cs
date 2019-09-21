@@ -16,12 +16,12 @@ namespace LinkShareApp.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "Description is necessary")]
         [Display(Name = "Url Description")]
         public string Description { get; set; }
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Url is necessary")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Actual Url is necessary")]
         [Display(Name = "Actual Url")]
         public string Url { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Url is necessary")]
-        [Display(Name = "Per Hour Price")]
-        public decimal PricePerHour { get; set; }
+        [Display(Name = "Per Day Price")]
+        public decimal PricePerDay { get; set; }
 
 
     }

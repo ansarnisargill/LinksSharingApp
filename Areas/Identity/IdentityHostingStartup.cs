@@ -17,9 +17,9 @@ namespace LinkShareApp.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<IdentityContextContext>(options =>
-                    //options.UseSqlServer(
-                    //    context.Configuration.GetConnectionString("IdentityContextContextConnection")));
-                    options.UseInMemoryDatabase());
+                    options.UseSqlServer(
+                       context.Configuration.GetConnectionString("IdentityContextConnection")));
+                    
 
                 services.AddDefaultIdentity<LinkShareAppUser>()
                     .AddEntityFrameworkStores<IdentityContextContext>();

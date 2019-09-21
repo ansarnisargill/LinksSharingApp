@@ -4,32 +4,47 @@
 ViewData["Title"] = "PurchaseCode";
 Layout = "~/Pages/Shared/_Layout.cshtml";
 }
-   <script src="https://www.paypal.com/sdk/js?client-id=SB_CLIENT_ID&currency=USD">
-    </script>
-    <div id="paypal-button-container"></div>
-      <script>
-    paypal.Buttons().render('#paypal-button-container');
-  </script>
+<script src="https://www.paypal.com/sdk/js?client-id=AW0s2Yn88U_C8M-aCFLv9OrwXSRr_SNNwABFy6F0DxVEEgW_P181kR55s2y4AWaOWhF1Hp9BrlOQ6T9J&currency=USD">
+</script>
+<script>
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '@Model.Link.PricePerDay'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      // Capture the funds from the transaction
+      return actions.order.capture().then(function(details) {
+        // Show a success message to your buyer
+        window.location.href="/Checkout/@Model.Link.ID";
+      });
+    }
+  }).render('#paypal-button-container');
+</script>
 @{ var item = Model.Link;
-
 <div class="card col-4 offset-4 bg-white">
-    <div class="card-body">
-        <h5 class="card-title">@item.UrlName</h5>
-        <p class="card-text">@item.Description <br /> Price for next 24 hour access is: @item.PricePerDay.ToString("C")</p>
-        <!-- Example split danger button -->
-        <div class="btn-group">
-            <button type="button" class="btn btn-outline-success">Checkout</button>
-            <button type="button" class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item disabled btn btn-outline-dark" href="#">Via PayPal</a>
-                <a class="dropdown-item btn btn-outline-dark" href="/Checkout/@item.ID">Via Cash</a>
-            </div>
-        </div>
-
+  <div class="card-body">
+    <h5 class="card-title">@item.UrlName</h5>
+    <p class="card-text">@item.Description <br /> Price for next 24 hour access is: @item.PricePerDay.ToString("C")</p>
+    <!-- Example split danger button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-outline-success">Checkout</button>
+      <button type="button" class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <div id="paypal-button-container"></div>
+        <a class="dropdown-item btn btn-outline-dark" href="/Checkout/@item.ID">Via Cash</a>
+      </div>
     </div>
+
+  </div>
 
 
 </div>

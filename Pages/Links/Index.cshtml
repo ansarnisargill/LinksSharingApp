@@ -2,7 +2,7 @@
 @model LinkShareApp.Pages.Links.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+ViewData["Title"] = "Index";
 }
 
 <h1>List Of Links</h1>
@@ -25,11 +25,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.Link[0].PricePerDay)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Link[0].FacebookLink)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Link) {
+        @foreach (var item in Model.Link) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.UrlName)
@@ -44,11 +47,14 @@
                 @Html.DisplayFor(modelItem => item.PricePerDay)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.FacebookLink)
+            </td>
+            <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>

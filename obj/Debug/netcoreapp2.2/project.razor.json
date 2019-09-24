@@ -3001,6 +3001,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\CashCheckout.cshtml",
+      "TargetPath": "Pages\\CashCheckout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\PurchaseCode.cshtml",
       "TargetPath": "Pages\\PurchaseCode.cshtml",
       "FileKind": "mvc"

@@ -1,0 +1,15 @@
+﻿@page "{id}"
+@model LinkShareApp.Pages.CashCheckoutModel
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+    <div class="card col-4 offset-4 bg-white">
+        <div class="card-body">
+            <h5 class="card-title text-success">You can get secret link of <span class="text-primary">@Model.link.UrlName</span> by paying <span class="text-dark">@Model.link.PricePerDay.ToString("C")</span> </h5>
+
+        </div>
+
+
+    </div>
+

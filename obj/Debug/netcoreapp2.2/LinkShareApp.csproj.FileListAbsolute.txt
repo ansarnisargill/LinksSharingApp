@@ -133,3 +133,4 @@ C:\Users\Ansar\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.View
 C:\Users\Ansar\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.dll
 C:\Users\Ansar\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.pdb
 C:\Users\Ansar\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\LinkShareApp.csproj.CopyComplete
+C:\Users\Ansar\Desktop\LinksSharingApp\obj\Debug\netcoreapp2.2\Razor\Pages\CashCheckout.g.cshtml.cs

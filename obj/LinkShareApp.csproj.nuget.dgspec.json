@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ansar\\Desktop\\LinksSharingApp\\LinkShareApp.csproj": {}
+    "C:\\Users\\it\\Desktop\\LinksSharingApp\\LinkShareApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ansar\\Desktop\\LinksSharingApp\\LinkShareApp.csproj": {
+    "C:\\Users\\it\\Desktop\\LinksSharingApp\\LinkShareApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ansar\\Desktop\\LinksSharingApp\\LinkShareApp.csproj",
+        "projectUniqueName": "C:\\Users\\it\\Desktop\\LinksSharingApp\\LinkShareApp.csproj",
         "projectName": "LinkShareApp",
-        "projectPath": "C:\\Users\\Ansar\\Desktop\\LinksSharingApp\\LinkShareApp.csproj",
-        "packagesPath": "C:\\Users\\Ansar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ansar\\Desktop\\LinksSharingApp\\obj\\",
+        "projectPath": "C:\\Users\\it\\Desktop\\LinksSharingApp\\LinkShareApp.csproj",
+        "packagesPath": "C:\\Users\\it\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\it\\Desktop\\LinksSharingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ansar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\it\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,10 +82,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
